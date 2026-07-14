@@ -5,13 +5,10 @@ import { Leaf, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const links = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Solutions', href: '#solutions' },
-  { label: 'Technology', href: '#technology' },
-  { label: 'Industries', href: '#industries' },
-  { label: 'Impact', href: '#impact' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '/about' },
+  { label: 'Solutions', href: '/solutions' },
+  { label: 'Impact', href: '/impact' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export function Navbar() {
@@ -36,7 +33,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <a
-          href="#home"
+          href="/"
           className={cn(
             'flex items-center gap-2 text-lg font-bold tracking-tight transition-colors',
             scrolled ? 'text-foreground' : 'text-white',
@@ -72,7 +69,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href="#contact"
+            href="/contact"
             className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md sm:inline-flex"
           >
             Book Consultation
@@ -105,7 +102,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground"
             >
